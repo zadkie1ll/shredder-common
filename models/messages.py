@@ -4,7 +4,7 @@ from typing import Literal
 from pydantic import BaseModel
 from common.models.tariff import Tariff
 
-# Типы сообщений, которыми обмениваются Monkey Island сервисы
+# Типы сообщений, которыми обмениваются сервисы Shredder
 
 
 class ConversionEvent(str, Enum):
