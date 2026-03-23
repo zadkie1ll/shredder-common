@@ -26,8 +26,8 @@ class Tariff(BaseModel):
 
 class TrialPromotionTariff(Tariff):
     price: Literal[10] = 10
-    description: Literal["Monkey Island пробный период на 3 дня"] = (
-        "Monkey Island пробный период на 3 дня"
+    description: Literal["ShredderVPN пробный период на 3 дня"] = (
+        "ShredderVPN пробный период на 3 дня"
     )
     db_tariff_id: Literal["threedays"] = "threedays"
     subscription_period: timedelta = timedelta(days=3)
@@ -35,8 +35,8 @@ class TrialPromotionTariff(Tariff):
 
 class OneDayTariff(Tariff):
     price: Literal[9] = 9
-    description: Literal["Monkey Island подписка на 1 день"] = (
-        "Monkey Island подписка на 1 день"
+    description: Literal["ShredderVPN подписка на 1 день"] = (
+        "ShredderVPN подписка на 1 день"
     )
     db_tariff_id: Literal["oneday"] = "oneday"
     subscription_period: timedelta = timedelta(days=1)
@@ -44,8 +44,8 @@ class OneDayTariff(Tariff):
 
 class OneMonthTariff(Tariff):
     price: Literal[249] = 249
-    description: Literal["Monkey Island подписка на 1 месяц"] = (
-        "Monkey Island подписка на 1 месяц"
+    description: Literal["ShredderVPN подписка на 1 месяц"] = (
+        "ShredderVPN подписка на 1 месяц"
     )
     db_tariff_id: Literal["month"] = "month"
     subscription_period: timedelta = timedelta(days=30)
@@ -53,8 +53,8 @@ class OneMonthTariff(Tariff):
 
 class ThreeMonthsTariff(Tariff):
     price: Literal[599] = 599
-    description: Literal["Monkey Island подписка на 3 месяца"] = (
-        "Monkey Island подписка на 3 месяца"
+    description: Literal["ShredderVPN подписка на 3 месяца"] = (
+        "ShredderVPN подписка на 3 месяца"
     )
     db_tariff_id: Literal["threemonths"] = "threemonths"
     subscription_period: timedelta = timedelta(days=90)
@@ -62,8 +62,8 @@ class ThreeMonthsTariff(Tariff):
 
 class SixMonthsTariff(Tariff):
     price: Literal[999] = 999
-    description: Literal["Monkey Island подписка на 6 месяцев"] = (
-        "Monkey Island подписка на 6 месяцев"
+    description: Literal["ShredderVPN подписка на 6 месяцев"] = (
+        "ShredderVPN подписка на 6 месяцев"
     )
     db_tariff_id: Literal["sixmonths"] = "sixmonths"
     subscription_period: timedelta = timedelta(days=180)
@@ -71,8 +71,8 @@ class SixMonthsTariff(Tariff):
 
 class OneYearTariff(Tariff):
     price: Literal[1799] = 1799
-    description: Literal["Monkey Island подписка на 1 год"] = (
-        "Monkey Island подписка на 1 год"
+    description: Literal["ShredderVPN подписка на 1 год"] = (
+        "ShredderVPN подписка на 1 год"
     )
     db_tariff_id: Literal["year"] = "year"
     subscription_period: timedelta = timedelta(days=360)
