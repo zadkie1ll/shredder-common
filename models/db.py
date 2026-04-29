@@ -37,7 +37,7 @@ class User(Base):
     __tablename__ = "users"
     id = Column(BigInteger, Sequence("users_id_seq"), primary_key=True)
     telegram_id = Column(BigInteger, unique=True, nullable=False)
-    username = Column(String(256), unique=True, nullable=False)
+    username = Column(String(256), unique=True, nullable=True)
     referred_by_id = Column(BigInteger, ForeignKey("users.id"), nullable=True)
     referral_type = Column(
         SQLEnum(ReferralType, native_enum=False),
