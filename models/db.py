@@ -75,8 +75,12 @@ class ExpiredUsersNotification(Base):
 class ExtendSubscriptionNotification(Base):
     __tablename__ = "extend_subscription_notifications"
     id = Column(BigInteger, Sequence("notificated_id_seq"), primary_key=True)
-    three_days_before = Column(Boolean, default=False, nullable=False)
-    one_day_before = Column(Boolean, default=False, nullable=False)
+    three_days_before = Column(
+        Boolean, default=False, server_default="false", nullable=False
+    )
+    one_day_before = Column(
+        Boolean, default=False, server_default="false", nullable=False
+    )
     user_id = Column(BigInteger, ForeignKey("users.id"), unique=True, nullable=False)
 
 
