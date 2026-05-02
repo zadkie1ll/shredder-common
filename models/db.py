@@ -98,9 +98,11 @@ class UserTrafficProgress(Base):
     __tablename__ = "user_traffic_progress"
     id = Column(BigInteger, Sequence("user_traffic_progress_id_seq"), primary_key=True)
     user_id = Column(BigInteger, ForeignKey("users.id"), unique=True, nullable=False)
-    passed_0 = Column(Boolean, default=False, nullable=False)
-    passed_5mb = Column(Boolean, default=False, nullable=False)
-    passed_100mb = Column(Boolean, default=False, nullable=False)
+    passed_0 = Column(Boolean, default=False, server_default="false", nullable=False)
+    passed_5mb = Column(Boolean, default=False, server_default="false", nullable=False)
+    passed_100mb = Column(
+        Boolean, default=False, server_default="false", nullable=False
+    )
 
 
 class YkPayment(Base):
