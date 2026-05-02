@@ -1,7 +1,7 @@
 """Add defaults to extend subscription notifications
 
 Revision ID: 43cf20693414
-Revises: 86e9edbf0f0e
+Revises: 9a1f2b3c4d5e
 Create Date: 2026-05-02 00:00:00.000000
 
 """
@@ -13,7 +13,7 @@ import sqlalchemy as sa
 
 # revision identifiers, used by Alembic.
 revision: str = "43cf20693414"
-down_revision: Union[str, Sequence[str], None] = "86e9edbf0f0e"
+down_revision: Union[str, Sequence[str], None] = "9a1f2b3c4d5e"
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
 
